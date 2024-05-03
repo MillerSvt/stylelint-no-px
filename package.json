@@ -46,5 +46,8 @@
     "setupFiles": [
       "<rootDir>/jest.setup.js"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
