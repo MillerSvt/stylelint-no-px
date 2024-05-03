@@ -1,6 +1,6 @@
 # stylelint-no-px
 
-![https://travis-ci.org/meowtec/stylelint-no-px](https://travis-ci.org/meowtec/stylelint-no-px.svg?branch=master)
+![https://travis-ci.org/MillerSvt/stylelint-no-px](https://travis-ci.org/MillerSvt/stylelint-no-px.svg?branch=master)
 
 A stylelint custom rule to ensure rem instead of px.
 
@@ -29,9 +29,9 @@ Add it to your stylelint config
   ],
   "rules": {
     // ...
-    "meowtec/no-px": [true, { "ignore": ["1px"] }],
+    "MillerSvt/no-px": [true, { "ignore": ["1px"] }],
     // or just:
-    "meowtec/no-px": true,
+    "MillerSvt/no-px": true,
     // ...
   }
 }
@@ -57,7 +57,7 @@ Specify a base size for converting px to rem. If this option is provided, the pl
 
 ```javascript
 // all 1px is ok
-"meowtec/no-px": [true, { "ignore": ["1px"] }],
+"MillerSvt/no-px": [true, { "ignore": ["1px"] }],
 ```
 
 ```less
@@ -76,7 +76,7 @@ Specify a base size for converting px to rem. If this option is provided, the pl
 ```javascript
 //  - all `1px` or `font` is ok
 //  - rem(Npx) is ok
-"meowtec/no-px": [true, { "ignore": ["1px", "font"], "ignoreFunctions": ["rem"] }],
+"MillerSvt/no-px": [true, { "ignore": ["1px", "font"], "ignoreFunctions": ["rem"] }],
 ```
 
 ```less
@@ -94,7 +94,7 @@ Specify a base size for converting px to rem. If this option is provided, the pl
 
 ```javascript
 // only `border + 1px` is ok
-"meowtec/no-px": [true, { "ignore": ["border 1px"] }],
+"MillerSvt/no-px": [true, { "ignore": ["border 1px"] }],
 ```
 
 ```less
@@ -108,7 +108,7 @@ Specify a base size for converting px to rem. If this option is provided, the pl
 
 ```javascript
 // only `border + 1px` is ok
-"meowtec/no-px": [true, { "ignore": ["1px"], "remSize": 16 }],
+"MillerSvt/no-px": [true, { "ignore": ["1px"], "remSize": 16 }],
 ```
 
 ```less
